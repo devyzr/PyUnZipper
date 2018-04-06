@@ -1,3 +1,14 @@
+'''
+A script that will extract all zipfiles in the current directory into folders.
+
+If the zipfile name matches the root directory, it will extract the zipfile
+without creating a new folder.
+
+If the zipfile contains multiple root folders or the root folder doesn't match
+the zipfile, it will create a new directory named after the zipfile and
+decompress the files into it.
+'''
+
 from zipfile import ZipFile
 from os import listdir
 from os import mkdir
